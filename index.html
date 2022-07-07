@@ -72,7 +72,10 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-          <button type="button" class="button-primary">Заказать услугу</button>
+          <button type="button" class="button-primary" data-modal-open>
+            Заказать услугу
+          </button>
+                    </div>
         </div>
       </section>
       <section class="section">
@@ -135,21 +138,30 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="samples list">
             <li class="item">
-              <img src="./images/pcapp.jpg" width="370" alt="создание сайтов" />
+              <img src="./images/pcapp.jpg" width="370" alt="десктопные приложения" />
+              <div class="samples-label">
+                <span class="samples-text">десктопные приложения</span>
+              </div>
             </li>
             <li class="item">
               <img
                 src="./images/mobapp.jpg"
                 width="370"
-                alt="разработка мобильных приложений"
+                alt="мобильные приложения"
               />
+              <div class="samples-label">
+                <span class="samples-text">мобильные приложения</span>
+              </div>
             </li>
             <li class="item">
               <img
                 src="./images/tabletapp.jpg"
                 width="370"
-                alt="оптимизация сайтов"
+                alt="дизайнерские решения"
               />
+              <div class="samples-label">
+                <span class="samples-text">дизайнерские решения</span>
+              </div>
             </li>
           </ul>
         </div>
@@ -528,5 +540,14 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button type="button" class="close-button" data-modal-close>
+                <svg class="close-icon" width="11" height="11">
+                  <use href="./images//symbol-defs.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
