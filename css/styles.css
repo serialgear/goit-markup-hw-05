@@ -247,6 +247,8 @@ img {
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0;
+  transform: scale(1);
+  transition: transform 125ms var(--timing-function);
 }
 .button-secondary {
   background: #f5f4fa;
@@ -285,6 +287,7 @@ img {
 .button-primary:focus {
   color: var(--primary-white-color);
   background-color: #188ce8;
+  transform: scale(1.05);
 }
 .button-secondary:hover,
 .button-secondary:focus {
@@ -311,12 +314,9 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: var(--primary-white-color);
+  cursor: pointer;
 }
 .close-icon {
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
   fill: #000000;
 }
 
@@ -496,10 +496,8 @@ img {
 }
 .employersoc-link:hover .employersoc-icon {
   fill: var(--primary-white-color);
-  transform: rotate(45deg);
   animation: rotation 2s forwards infinite ease-out 0.5s;
 }
-
 .employersoc-icon {
   fill: #afb1b8;
 }
@@ -529,6 +527,8 @@ img {
   border-radius: 4px;
   justify-content: center;
   align-items: center;
+  transform: scale(1);
+  transition: transform 125ms var(--timing-function);
 }
 .customer-icon {
   fill: #afb1b8;
@@ -540,6 +540,7 @@ img {
 .customer-link:hover,
 .customer-link:focus {
   border-color: var(--accent-color);
+  transform: scale(1.05);
 }
 
 /* footer */
@@ -565,23 +566,31 @@ img {
   margin-top: 9px;
 }
 .footer-email {
+  display: block;
   font-family: inherit;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  transform: scale(1);
+  transition: transform 125ms var(--timing-function);
 }
 .footer-phone {
+  display: block;
   font-family: inherit;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  transform: scale(1);
+  transition: transform 125ms var(--timing-function);
 }
 
 .footer-email:hover,
 .footer-email:focus {
   color: var(--accent-color);
+  transform: scale(1.05);
 }
 .footer-phone:hover,
 .footer-phone:focus {
   color: var(--accent-color);
+  transform: scale(1.05);
 }
 
 .footerlogo-accent {
@@ -666,6 +675,7 @@ img {
 .project-item {
   width: 370px;
   height: 404px;
+  transition: box-shadow 250ms var(--timing-function);
 }
 .project-data {
   padding: 20px 24px;
